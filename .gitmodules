@@ -1,0 +1,3 @@
+[submodule "server/nodejs-jwt-authentication-sample"]
+	path = server/nodejs-jwt-authentication-sample
+	url = git@github.com:auth0-blog/nodejs-jwt-authentication-sample.git
