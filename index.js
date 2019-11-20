@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import './index.css';
 import App from './containers/App';
 import quotesApp from './reducers'
+import thunkMiddleware from 'redux-thunk'
 import * as serviceWorker from './src/serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
