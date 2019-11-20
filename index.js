@@ -9,6 +9,8 @@ import thunkMiddleware from 'redux-thunk'
 import api from './middleware/api'
 import * as serviceWorker from './src/serviceWorker';
 
+let createStoreWithMiddleware = applyMiddleware(thunkMiddleware, api)(createStore)
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
