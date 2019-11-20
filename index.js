@@ -11,6 +11,8 @@ import * as serviceWorker from './src/serviceWorker';
 
 let createStoreWithMiddleware = applyMiddleware(thunkMiddleware, api)(createStore)
 
+let store = createStoreWithMiddleware(quotesApp)
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
